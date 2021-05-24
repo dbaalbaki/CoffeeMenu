@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "CreateItem";
+}
+
+<h1>Add New Item</h1>
+
+<form methoid="post" action="/menu/create">
+    Product Name <input type="text" name="productname" /><br />
+    Discription <input type="text" name="discription" /><br />
+    Price <input type="text" name="price" /><br />
+    Category <input type="text" name="category" /><br />
+    <input type="submit" value="Add item" />
+</form>

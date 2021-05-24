@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "edititem";
+}
+
+<h1>Edit Item</h1>
+
+<form methoid="post" action="/menu/edit">
+    <input type="hidden" value="@Model.id" name="id" />
+    First Name <input type="text" value="@Model.productname" name="productname" /><br />
+    Last Name <input type="text" value="@Model.discription" name="discription" /><br />
+    Phone <input type="text" value="@Model.price" name="price" /><br />
+    Email <input type="text" value="@Model.category" name="category" /><br />
+    <input type="submit" value="Save" />
+</form>
